@@ -1,6 +1,9 @@
 name: Build and Push
 
-on: [tags]
+on:
+  push:
+    tags:
+      - v*
 
 jobs:
   build-and-push:
